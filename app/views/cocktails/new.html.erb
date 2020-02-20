@@ -1,0 +1,15 @@
+<div class='navbar-brand'>
+  <%= link_to cocktails_path do %>
+    <i class="fas justify-content-start fa-arrow-circle-left fa-3x return-button"></i>
+  <% end %>
+  <h1>Create New Cocktail</h1>
+</div>
+
+<div class='jumbotron'>
+  <%= simple_form_for @cocktail do |f| %>
+    <%=  f.input :name, class: 'form-control' %>
+    <%=  f.button :submit, class: 'btn-success' %>
+  <% end %>
+</div>
+
+
